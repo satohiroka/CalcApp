@@ -1,10 +1,7 @@
 package jp.techacademy.sato.calcapp
 
-import android.R.drawable.edit_text
 import android.content.Intent
 import android.os.Bundle
-import android.text.InputType
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
@@ -20,13 +17,11 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         subBtn.setOnClickListener(this)
         mulBtn.setOnClickListener(this)
         divBtn.setOnClickListener(this)
-
     }
 
     override fun onClick(v: View?) {
 
         try {
-
             val value1 = editText1.text.toString().toDouble()
             val value2 = editText2.text.toString().toDouble()
             val intent = Intent(this, SecondActivity::class.java)
@@ -44,7 +39,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
 
         } catch(e: Exception){
             if (v != null) {
-                Snackbar.make(v, "整数を入力してください", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(v, "数字を入力してください", Snackbar.LENGTH_SHORT).show()
             }
         }
 
