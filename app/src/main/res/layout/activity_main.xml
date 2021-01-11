@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textAlignment="textStart" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/editText1"
+        android:inputType="numberDecimal"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="9dp"
+        android:text="たし算"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/addBtn"
+        android:text="ひき算" />
+
+    <Button
+        android:id="@+id/mulBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addBtn"
+        android:layout_marginTop="9dp"
+        android:text="かけ算"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addBtn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/mulBtn"
+        android:text="わり算" />
+
+</RelativeLayout>
